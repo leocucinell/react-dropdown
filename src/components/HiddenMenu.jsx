@@ -10,13 +10,19 @@ class HiddenMenu extends React.Component{
         }
     }
 
+    renderItems = (items) => {
+        return items.map((item) => {
+            return(
+                <li className="HiddenMenu-li">{item}</li>
+            );
+        })
+    }
+
     render(){
         return(
-            <div className="hiddenList-container">
-                <ul>
-                    <li>Mission</li>
-                    <li>Team</li>
-                    <li>History</li>
+            <div onMouseLeave={() => this.props.setShow(false)} className="HiddenMenu-container">
+                <ul className="HiddenMenu-ul">
+                    {this.renderItems(this.props.items)}
                 </ul>
             </div>
         )

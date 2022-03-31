@@ -5,7 +5,7 @@ import HiddenMenu from "./HiddenMenu";
 
 import "./ListItem.css";
 
-const ListItem = ({title}) => {
+const ListItem = ({title, items}) => {
     const [show, setShow] = useState(false)
     return(
         <li className="ListItem-container" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
@@ -18,7 +18,7 @@ const ListItem = ({title}) => {
                     appear={true}
                     classNames="showList"
                 >
-                    <HiddenMenu items={["About", "Team", "Mission"]} />
+                    <HiddenMenu setShow={setShow} items={items} />
                 </CSSTransition>
                 :
                 null
