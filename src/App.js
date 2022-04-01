@@ -1,6 +1,7 @@
 import './App.css';
 
 import ListItem from './components/ListItem';
+import CardContainer from './components/CardContainer';
 
 function App() {
   return (
@@ -15,9 +16,7 @@ function App() {
         </ul>
       </nav>
 
-      <main className='main-content'>
-        
-      </main>
+      <CardContainer />
     </div>
   );
 }
