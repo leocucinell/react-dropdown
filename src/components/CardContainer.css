@@ -1,0 +1,41 @@
+.CardContainer-container{
+    margin-top: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 700px;
+}
+
+.CardContainer-add-btn{
+    background-color: aqua;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.CardContainer-card{
+    height: 300px;
+    width: 180px;
+    background-color: darkslategrey;
+    color: #FFFFFF;
+}
+
+/* note-card Transition Animation Classes */
+.note-card-appear{
+    opacity: 0
+}
+.note-card-appear.note-card-appear-active{
+    opacity: 1;
+    transition: opacity 300ms ease-in
+}
+.note-card-appear{
+    opacity: 0
+}
+.note-card-appear-active{
+    opacity: 1;
+    transition: opacity 300ms ease-in
+}
